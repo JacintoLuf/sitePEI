@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PEI - Plataforma de Gestão de Reserva de Salas</title>
+  <title>Freelancer - Start Bootstrap Theme</title>
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,16 +17,19 @@
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
-  <link href="css/simple-sidebar.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase static-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger">Gestão de Reserva de Salas</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
@@ -42,49 +45,6 @@
       </div>
     </div>
   </nav>
-
-  
-  <div class="d-flex" id="wrapper">
-
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Grupo3 - 31 </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
-      </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-
-      <!--<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>-->
-      <div class="container-fluid">
-        <div class="mt-2 col-md-20">
-          <button class="py-1 px-1 px-lg-3 btn btn-dark" id="menu-toggle"><i class="fas fa-arrow-left"></i></button>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <h1 class="mt-4">BLABLABLA</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-      </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-  </div>
 
   <!-- Masthead -->
   <header class="masthead bg-primary text-white text-center">
@@ -596,16 +556,8 @@
     </div>
   </div>
 
-  <button type="button" class="btn btn-dark fixed-bottom"><a href="#"><i class="fas fa-arrow-up"></i></a></button>
-  
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
@@ -617,7 +569,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
-  
+
 </body>
 
 </html>
