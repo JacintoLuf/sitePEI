@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,8 +9,8 @@
   <meta name="author" content="">
 
   <title>PEI - Plataforma de Gestão de Reserva de Salas</title>
-
   <!-- Custom fonts for this theme -->
+
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -72,7 +72,7 @@
       </nav>-->
       <div class="container-fluid">
         <div class="mt-2 col-md-20">
-          <button class="py-1 px-1 px-lg-3 btn btn-dark" id="menu-toggle"><i class="fas fa-arrow-left"></i></button>
+          <button class="py-1 px-1 px-lg-3 btn btn-dark" id="menu-toggle"><i class="fas fa-arrow-left" id="toggleClass"></i></button>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -596,15 +596,26 @@
     </div>
   </div>
 
-  <button type="button" class="btn btn-dark fixed-bottom"><a href="#"><i class="fas fa-arrow-up"></i></a></button>
-  
+  <div class="col-md-3 fixed-bottom">
+    <button class="py-2 px-1 px-lg-3 btn btn-dark" id="to-top"><a href="#"><i class="fas fa-arrow-up"></i></a></button>
+  </div>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script>
+    $("#menu-toggle").click(function() {
+      if ($("#toggleClass").hasClass('fas fa-arrow-left')) {
+        $("#toggleClass").removeClass('fas fa-arrow-left').addClass('fas fa-arrow-right');
+      }else if ($("#toggleClass").hasClass('fas fa-arrow-right')) {
+        $("#toggleClass").removeClass('fas fa-arrow-right').addClass('fas fa-arrow-left');
+      }
+    });
     $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
+  </script>
+  <script>
   </script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
