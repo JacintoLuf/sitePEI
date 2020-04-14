@@ -118,16 +118,37 @@
           <div class="mt-5">
             <i class="fas fa-4x fas fa-signal text-primary mb-4"></i>
             <h4 class="h4 mb-2"><b>Internet</b></h4>
-            <p class="text-muted text-justify mb-0">Internet module is connected to the raspberry Pi, and allows the raspberry Pi to be connected to the internet, to send all the important information (location, battery, etc) of the scooter.</p>
+            <p class="text-muted text-justify mb-0">Internet module is connected to the raspberry Pi, and allows the raspberry Pi to be connected to the internet, to send all the important information (location, battery, etc) of the scooter through MQTT.</p>
           </div>
         </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <i class="fas fa-4x fas fa-credit-card text-primary mb-4"></i>
+          <h4 class="h4 mb-2"><b>RFID reader</b></h4>
+          <p class="text-muted text-justify mb-0">It is connected to the Raspberry Pi, allows us to get the information from the user card, to verify his identity.</p>
+        </div>
       </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <i class="fab fa-4x fa fa-server text-primary mb-4"></i> 
+          <h4 class="h4 mb-2"><b>Server</b></h4>
+          <p class="text-muted text-justify mb-0">It processes all the data from the scooter, does the user authentication, hosts an MQTT broker and the web page, it is also an MQTT client to get the data from the scooter.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <i class="fas fa-4x fas fa-window-maximize text-primary mb-4"></i>
+          <h4 class="h4 mb-2"><b>Web Page</b></h4>
+          <p class="text-muted text-justify mb-0">Shows the location and availability of the scooters to the end user, and allows the manager to have a detailed view of the scooters, users list, and define the limits for geofencing.</p>
+        </div>
+      </div>
+    </div>
       <div class="container text-center">
         <div class="row align-items-center mb-2">
           <div class="col-md-30 pr-md-2 mb-2">
             <div class="block-41">
               <div class="block-41-text">
-                <img src="img/diagrama.png" style="width: 70%; margin-top: 100px;">
+                <img src="img/Architecture V3.png" style="width: 70%; margin-top: 100px;">
                 <figcaption><p class="text-muted" style="font-size: small;">Fig.1 - Interconnection between all modules with raspberry Pi.</p></figcaption>
               </div>
             </div>
